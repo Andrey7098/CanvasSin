@@ -1,0 +1,10 @@
+#can1{
+    border: 1px solid;
+    background-image: url(setka.png);
+}
+#height{
+    height: 300px;
+    width: 1px;
+    border: 1px solid;
+    margin-left: 100px;
+}
