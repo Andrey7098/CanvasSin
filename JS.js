@@ -44,10 +44,10 @@ window.onload = function(){
     function drawing(){
         document.getElementById("update").onclick = function(){
             ctx.clearRect(0,0,width,height);//отчищаем кэнвас
+            Axis()//Ресуем сетку
             drawing();
         }
         var quantityPoint = document.getElementById("AmountPoint").value;//Берем значение(целочисленное) из input
-        Axis();//Рисуем сетку
         Paint();//Рисуем график
         //Функция рисования графика
         function Paint(ScaleX = 1,ScaleY = 10){
