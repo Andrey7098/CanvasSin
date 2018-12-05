@@ -1,10 +1,22 @@
 #can1{
     border: 1px solid;
-    background-image: url(setka.png);
+/*    background-image: url(setka.png);*/
+    background: rgba(221, 221, 221, 0.46);
+    
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 1px;
 }
 #height{
     height: 300px;
     width: 1px;
     border: 1px solid;
     margin-left: 100px;
+
+}
+#AmountPoint{
+    width: 200px;
+    border-radius: 2px;
+    height: 22px;
 }
