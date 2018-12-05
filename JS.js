@@ -40,8 +40,12 @@ window.onload = function(){
         } 
     
     //При нажатии на кнопку (Отправить) выполнять следующую анонимную функцию.
-    document.getElementById("start").onclick = function(){
-        ctx.clearRect(0,0,width,height);//отчищаем кэнвас
+    document.getElementById("add").onclick = drawing; 
+    function drawing(){
+        document.getElementById("update").onclick = function(){
+            ctx.clearRect(0,0,width,height);//отчищаем кэнвас
+            drawing();
+        }
         var quantityPoint = document.getElementById("AmountPoint").value;//Берем значение(целочисленное) из input
         Axis();//Рисуем сетку
         Paint();//Рисуем график
